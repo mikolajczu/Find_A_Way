@@ -1,0 +1,22 @@
+﻿<Window x:Class="Find_A_Way.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Find_A_Way"
+        mc:Ignorable="d"
+        Title="Find a Way" Height="720" Width="1270"
+        Background="#E9E9E9">
+    <Grid Height="720">
+        <Canvas Margin="20,10,170,50" Background="#FFF" Name="canvas" Height="660" Width="1080" MouseMove="canvas_MouseMove" MouseLeftButtonDown="canvas_MouseLeftButtonDown">
+        </Canvas>
+        <StackPanel Margin="1100,79,0,530">
+            <RadioButton Name="StartRadioButton" Content="Start" Margin="10, 10, 10, 0" IsChecked="True"/>
+            <RadioButton Name="FinishButton" Content="Finish" Margin="10, 10, 10 ,0"/>
+            <RadioButton Name="WallButton" Content="Wall" Margin="10"/>
+
+        </StackPanel>
+        <Button Name="StartButton"  Content="Start" HorizontalAlignment="Left" Margin="1124,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="37" Width="86" Click="StartButton_Click"/>
+        <Button Name="Clear"  Content="Clear" HorizontalAlignment="Left" Margin="1124,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.683" Height="37" Width="86" Click="Clear_Click"/>
+    </Grid>
+</Window>
